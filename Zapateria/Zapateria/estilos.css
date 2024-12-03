@@ -1,0 +1,99 @@
+/* estilos.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(Imagenes/Paisaje.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    margin: 0;
+    
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+.button {
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #ff3535;
+}
+
+p {
+    text-align: center;
+}
+
+p a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 100%;
+    }
+}
+.encabezado{
+    text-align: center;
+}
+/* estilos.css */
+/* Añade tus estilos anteriores aquí */
+
+

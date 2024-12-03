@@ -1,0 +1,266 @@
+:root {
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #ff0000;
+    --primarycolor-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+
+}
+
+.login-box {
+    width: auto;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.login-box {
+    width: auto;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.login-box .encabezado {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.login-box img {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px 0 0;
+}
+
+.login-box .encabezado .titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-box .encabezado .titulo h2 {
+    text-transform: uppercase;
+}
+
+.login-box .encabezado .titulo h3 {
+    text-transform: uppercase;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox input {
+    margin: 40px auto 40px auto;
+    width: 100%;
+    padding: 10px;
+    background: #f4f4f4;
+    border: none;
+    outline: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.textbox input[type="file"] {
+    padding: 5px;
+}
+
+.btn {
+    width: 100%;
+    background: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+table tr td img {
+}
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija para estar siempre visible */
+    z-index: 1; /* Superponerse al resto del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% desde la parte superior y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Puede ajustarse según sea necesario */
+    max-width: 500px; /* Máximo ancho del modal */
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+.elimino {
+    
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+    color: var(--text-color);
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.elimino:hover {
+
+    background: #fff;
+    box-shadow: 0 0 20px 5px var(--primary-color);
+}
+.vacio {
+    
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+    color: var(--text-color);
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.vacio:hover {
+
+    background: #fff;
+    box-shadow: 0 0 20px 5px var(--primary-color);
+}
+.compro {
+    
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+    color: var(--text-color);
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.compro:hover {
+
+    background: #fff;
+    box-shadow: 0 0 20px 5px var(--primary-color);
+}
+
+.btn {
+    display: block;
+    height: 50px;
+    width: auto;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid var(--primary-color);
+    z-index: 0;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+  }
+  .btn::before {
+    content: "";
+    background-color: var(--primary-color);
+    transition: all 500ms ease;
+    z-index: -1;
+  }
+
+  .btn--3:hover {
+    color: #000000 !important;
+    transform: scale(1.3);
+    box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 20px var(--primary-color);
+    background-color: var(--primary-color);
+  }
+
+.acciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.encabezado{
+    text-align: center;
+}
+
+.cuerpo{
+    text-align: center;
+}
